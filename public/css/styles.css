@@ -44,7 +44,8 @@ header a {
 input{
     border: none;
     border-bottom: 2px solid red;
-    padding:  16px 32px
+    outline: none;
+    padding:  16px 32px 16px 0px;
 }
 
 button{
@@ -53,4 +54,8 @@ button{
     color: black;
     padding:  16px 32px;
     cursor: pointer;
+}
+
+.weather-logo{
+    width: 50px; 
 }

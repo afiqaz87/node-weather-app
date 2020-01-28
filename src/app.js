@@ -36,7 +36,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'Goto weather tab, insert your location and hit enter or search.',
         title: 'Help',
         name: 'Afiq Azahari'
     })
@@ -65,7 +65,8 @@ app.get('/weather', (req, res) => {
 
             
             res.send({
-                forecast: forecastData,
+                forecast: forecastData.forcastMessage,
+                status: forecastData.status,
                 location
             })
         })
